@@ -1,0 +1,72 @@
+/* h1 {
+    color: green;
+    text-decoration: underline;
+   }
+   p {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+   }   
+   .important {
+    color: orange;
+   }
+   .warning {
+    color: blue;
+   }
+   .warning.important {
+    color: red;
+   }
+   input:not([disabled]):not(.example){
+    background-color: #ccc;
+   }
+    */
+    /* h1{
+        color: red;
+    } */
+    .linear-gradient {
+        background: linear-gradient(to left, red, blue,yellow, green,black,white); /* you can also use 270deg */
+    }   
+    .radial-gradient{
+        background: radial-gradient(red, blue);
+       }
+    .bullseye {
+        background: repeating-radial-gradient(red, red 10%, white 10%, white 20%);
+    }
+    .warning {
+        background: repeating-linear-gradient(-45deg, yellow, yellow 10%, white 10%, black 20% );
+       }
+            
+    div{
+        background-color: red;
+    }
+    .example {
+        width: 300px;
+        border: 20px solid black;
+        padding: 50px;
+        background: url(https://static.pexels.com/photos/6440/magazines-desk-work-workspace-medium.jpg);
+        background-repeat: no-repeat;
+       }
+       .example1 {}
+       .example2 { background-origin: border-box; }
+       .example3 { background-origin: content-box; }
+    .opacity{
+        width:500px;
+        height:200px;
+        background-color: rgba(10,200,100,0.1);
+    }
+    .center{       
+        text-align: center;
+        border: 2px solid blue;
+    }
+    .parent {
+        position: relative;
+        height: 500px;
+       }
+       .centers {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+       }
+       

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;    
+        }
+        nav a{
+            text-decoration: none;           
+        }
+        nav{
+            display:flex;
+            justify-content:space-evenly;
+            height:25px;
+            padding-top: 5px;
+        }
+        header{
+            background-color:aquamarine
+        }
+        #image{
+            height:150px;
+            width:120px;
+             background-color:green;
+            border:2px solid black;
+        }
+        #image_container{
+            height:350px;
+            border:4px solid red;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height:75px;
+            width:75px; 
+            border:2px solid blue;
+            margin-top: 5px;
+        }
+        #box_container{
+            border:4px solid green;
+            display:flex;
+            justify-content: space-around;
+            height:90px;
+            width:550px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Support</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image_container">
+            <div id="image">Imgae halne alxi lagyuu soo yesaii lai image vanera imagine gara </div>
+        </div> <br>
+        <div id="box_container">
+            <div id="box1" class="box">Box1</div>
+            <div id="box2" class="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+        </div>
+    </main>
+</body>
+</html>

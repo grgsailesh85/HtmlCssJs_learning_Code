@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        .pseudo{
+            height:100px;
+            width: 300px;
+            background-color: blueviolet;
+            border:3px solid black;
+            border-radius: 10px;
+            transition: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .pseudo:hover{
+            height:120px;
+            width:330px;
+            background-color: aqua;
+        }
+        .pseudo:active{
+            height:150px;
+            width:360px;
+            background-color: white;
+        }
+        .rotate{
+            height: 100px;
+            width: 100px;
+            border:2px solid black;
+            border-radius: 10px;
+            position: relative;
+            top:10px;
+            left:30px;
+            transition: all 3s ease 0.5s;
+            
+        }
+        .rotate:hover{
+            transform: rotate(360deg);
+        }
+        .scale{
+            height: 100px;
+            width:100px;
+            border:3px solid black;
+            position:relative;
+            left:40px;
+        }
+        .scale:hover{
+            background-color: aquamarine;
+            transform:scale(1.5);
+            transition: all 2s ease-in-out 1s ;
+        }
+        .translate{
+            height:70px;
+            width:70px;
+            border:3px solid black;
+            position: relative;
+            left:40px;
+        }
+        .translate:hover{
+            transform:translate(50px,50px);
+            background-color: aqua;
+            transition:all 3s ease 0.5s;
+        }
+        .skew{
+            height:60px;
+            width:60px;
+            border:3px solid black;
+            position:relative;
+            left:40px;
+        }
+        .skew:hover{
+            transform: skew(45deg);
+        }
+        .ani{
+            height:70px;
+            width:70px;
+            border:2px solid black;
+            position: relative;
+            left:40px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes example{
+            0%{left:10px;}
+            50%{left:150px;}
+            100%{left:300px;}
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Pseudo Button</button>
+    <br><br><hr>
+    <h1>Rotate</h1>
+    <div class="rotate">Rotate</div>
+    <br><br><br><hr><br>
+    <h1>Scale</h1>
+    <div class="scale">Scale</div>
+    <br><br><br><hr><br>
+    <h1>Translate</h1>
+    <div class="translate">Translate</div>
+    <br><br><br><hr><br>
+    <h1>Skew</h1>
+    <div class="skew">Skew</div>
+    <br><br><br><hr><br>
+    <h1>Animation</h1>
+    <div class="ani">Animation</div><br><br><br>
+</body>
+</html>
